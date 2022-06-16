@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body{
+                background-color:aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+      <form onsubmit="return validar()" action="destino.html" class="row g-3">
+        
+        <form class="row g-3 m-2">
+            <div class="col-md-12">
+              <label for="iputnEmail4" class="form-label">Correo</label>
+              <input  class="form-control" id="inputEmail4">
+            </div>
+            <div id="error_email" class="text-danger"></div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div id="error_pss" class="text-danger"></div>
+            <div class="col-md-6">
+                <label for="inputPassword5" class="form-label">Repetir Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword5">
+              </div>
+              <div id="error_pss2" class="text-danger"></div>
+
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress2" >
+              </div>
+            <div class="col-3">
+              <label for="inputAddress" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234">
+            </div>
+            
+            <div class="col-9">
+              <label for="inputAddress2" class="form-label">Referencia</label>
+              <input type="text" class="form-control" id="inputAddress2" >
+            </div>
+            
+            <div class="col-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-6">
+                <label for="inputState" class="form-label">Comuna</label>
+                <select id="inputState" class="form-select" placeholder="Eliga Comuna">
+                  <option>Seleccionar Comuna</option>
+                  <option value="1">Pedro Aguirres Cerda</option>
+                  <option value="2">El bosque</option>
+                  <option value="3">San Jose</option>
+                  <option value="4">Mafil</option>
+                  <option value="5s">Padre las casa</option>
+                </select>
+              </div>
+
+            <div class="col-6">
+                <label for="inputcel" class="form-label">Ingrese Movil</label>
+                <input type="text" class="form-control" id="inputcel" placeholder="+569">
+              </div>
+              
+              <div class="col-6">
+                <label for="inputfijo" class="form-label">Ingrese Fijo</label>
+                <input type="text" class="form-control" id="inputfijo" placeholder="632">
+              </div>
+                <div  id="error_fono" class="text-danger"></div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Pintar
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Dibujar
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Ver Peliculas y/o Series
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Cocinar
+                  </label>
+                </div>
+              </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+          </form>
+          <script src="js/validaciones.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>
